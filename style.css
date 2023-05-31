@@ -60,7 +60,6 @@ main .container .top-text {
   justify-content: center;
   align-items: center;
   height: 90px;
-  /* margin-top: 48px; */
 }
 
 main .container .top-text .advice-text {
@@ -74,7 +73,7 @@ main .container .main-text {
 }
 
 main .container #divider {
-  margin: 40px 0 72px 0; 
+  margin: 40px 0 10px 0;
 }
 
 main .cube {
