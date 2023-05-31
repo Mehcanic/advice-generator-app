@@ -34,4 +34,8 @@ const fetchData = async () => {
   }
 }
 
+if (mainText.textContent === '') {
+  mainText.textContent = 'Click the button to get advice!'
+}
+
 fetchButton.addEventListener('click', fetchData);
