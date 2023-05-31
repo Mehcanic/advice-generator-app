@@ -1,0 +1,108 @@
+:root {
+  /* Colors */
+
+  --text-color: #cee3e9;
+  --box-color: #313a48;
+  --line-color: #4f5d74;
+  --accent-color: #53ffaa;
+  --background-color: #202733;
+  
+
+  /* Typography */
+  --font-family: 'Manrope', sans-serif;
+
+  --main-text-desktop: 28px;
+  --main-text-mobile: 24px;
+  --secondary-text-desktop: 13px;
+  --secondary-text-mobile: 11px;
+
+  --primary-text-spacing: -0.3px;
+  --secondary-text-spacing: 4.08571px;
+
+  --font-weight: 800;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: var(--font-family);
+  color: var(--text-color);
+  font-size: var(--main-text-desktop);
+  font-weight: var(--font-weight);
+  text-align: center;
+  height: 100vh;
+}
+
+main {
+  background-color: var(--box-color);
+  max-width: 540px;
+  /* max-width: 1024px; */
+  border-radius: 15px;
+  margin: 5rem auto;
+}
+
+main .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+main .container .top-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  /* margin-top: 48px; */
+}
+
+main .container .top-text .advice-text {
+  font-size: var(--secondary-text-desktop);
+  color: var(--accent-color);
+  letter-spacing: var(--secondary-text-spacing);
+}
+
+main .container .main-text {
+  margin: 0 40px;
+}
+
+main .container #divider {
+  margin: 40px 0 72px 0; 
+}
+
+main .cube {
+  position: relative;
+  top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--accent-color);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;  
+  transition: box-shadow 0.2s ease;
+}
+
+main .cube:active {
+  box-shadow: 0px 0px 40px var(--accent-color);
+}
+
+main .cube img  {
+  cursor: pointer;
+  padding: 32px;
+}
+
+@media screen and (max-width: 420px) {
+  main {
+    margin: 5rem 1rem;
+  }
+}
+
+
